@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon-82fbd818.ico">
+    
+    <title>Anagram</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v1.1.0/modern-normalize.min.css" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/index-58841779.js"></script>
+    <link rel="stylesheet" href="./assets/index-51f72e71.css">
+  </head>
+  <body class='min-h-screen max-h-screen w-full'>
+
+    <div class="flex flex-row justify-center items-center border-b border-black h-10">
+
+      <input type="text" id="anagramText" placeholder="Enter Search Text Here" class="flex justify-center items-center w-1/2 h-full outline-none px-2">
+      <select name="dictionary" id="dictionary" class="flex justify-center items-center text-center w-1/4 h-full">
+        <option value=0 selected>1,000</option>
+        <option value=1>10,000</option>
+        <option value=2>20,000</option>
+        <option value=3>Small</option>
+        <option value=4>Medium</option>
+        <option value=5>Large</option>
+      </select>
+
+      <div class="flex justify-center items-center w-1/4 h-full">
+        <button id="activateButton" class="flex justify-center items-center w-full h-full active:scale-95"><img id="searchButton" src="./search.svg"></button>
+      </div>
+
+    </div>
+
+    <div id="filters" class="mx-auto flex flex-row w-full h-10 border-b border-black">
+
+      <div class="w-1/2 h-full flex justify-center items-center">
+        <input type="text" id="filterWords" placeholder="Filter" class="w-3/4 h-full outline-none px-2">
+        <select name="wordLengths" id="wordLengths" class="w-1/4 h-full text-center">
+          <option value="">-</option>
+        </select>
+      </div>
+  
+      <div class="w-1/2 h-full flex justify-center items-center">
+        <input type="text" id="filterSets" placeholder="Filter" class="w-3/4 h-full outline-none px-2">
+        <select name="setLengths" id="setLengths" class="w-1/4 h-full text-center">
+          <option value="">-</option>
+        </select>
+      </div>
+  
+    </div>
+  
+  <div id="results" class="flex flex-row w-full">
+    <div id="resultDiv" class="flex flex-col justify-start align-start content-start w-1/2"></div>
+    <div id="resultDiv2" class="flex flex-col justify-start align-start content-start w-1/2"></div>
+  </div>
+
+  </body>
+  
+</html>
